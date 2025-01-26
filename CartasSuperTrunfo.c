@@ -86,6 +86,13 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaA01);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderA01 = (float)populacaoA01 + areaA01 + PIBA01 + (float)N_Pontos_TuristicosA01 + (100 - densidadepopA01) + PIBpercapitaA01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderA01);
+    printf ("...\n\n\n");
+
+
     // Aqui deste trecho em diante é efetuada a repetição dos códigos de forma que todas as cartas recebam as informações pelo usuário
 
     // Definindo variáveis separadas para cada atributo da cidade código A02:
@@ -131,6 +138,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaA02);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderA02 = (float)populacaoA02 + areaA02 + PIBA02 + (float)N_Pontos_TuristicosA02 + (100 - densidadepopA02) + PIBpercapitaA02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderA02);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código A03:
 
     char estadoA03[20], codigoA03[3], nomeA03[25];
@@ -175,6 +188,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaA03);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderA03 = (float)populacaoA03 + areaA03 + PIBA03 + (float)N_Pontos_TuristicosA03 + (100 - densidadepopA03) + PIBpercapitaA03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderA03);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código A04:
 
     char estadoA04[20], codigoA04[3], nomeA04[25];
@@ -218,6 +237,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopA04);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaA04);
     printf ("\n");
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderA04 = (float)populacaoA04 + areaA04 + PIBA04 + (float)N_Pontos_TuristicosA04 + (100 - densidadepopA04) + PIBpercapitaA04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderA04);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código B01:
 
@@ -267,6 +292,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopB01);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaB01);
     printf ("\n");
+    
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderB01 = (float)populacaoB01 + areaB01 + PIBB01 + (float)N_Pontos_TuristicosB01 + (100 - densidadepopB01) + PIBpercapitaB01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderB01);
+    printf ("...\n\n\n");
 
      // Definindo variáveis separadas para cada atributo da cidade código B02:
 
@@ -310,6 +341,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopB02);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaB02);
     printf ("\n");
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderB02 = (float)populacaoB02 + areaB02 + PIBB02 + (float)N_Pontos_TuristicosB02 + (100 - densidadepopB02) + PIBpercapitaB02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderB02);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código B03:
 
@@ -355,6 +392,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaB03);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderB03 = (float)populacaoB03 + areaB03 + PIBB03 + (float)N_Pontos_TuristicosB03 + (100 - densidadepopB03) + PIBpercapitaB03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderB03);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código B04:
 
     char estadoB04[20], codigoB04[3], nomeB04[25];
@@ -399,6 +442,11 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaB04);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderB04 = (float)populacaoB04 + areaB04 + PIBB04 + (float)N_Pontos_TuristicosB04 + (100 - densidadepopB04) + PIBpercapitaB04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderB04);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código C01:
 
@@ -448,6 +496,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopC01);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaC01);
     printf ("\n");
+    
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderC01 = (float)populacaoC01 + areaC01 + PIBC01 + (float)N_Pontos_TuristicosC01 + (100 - densidadepopC01) + PIBpercapitaC01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderC01);
+    printf ("...\n\n\n");
 
      // Definindo variáveis separadas para cada atributo da cidade código C02:
 
@@ -492,6 +546,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaC02);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderC02 = (float)populacaoC02 + areaC02 + PIBC02 + (float)N_Pontos_TuristicosC02 + (100 - densidadepopC02) + PIBpercapitaC02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderC02);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código C03:
 
     char estadoC03[20], codigoC03[3], nomeC03[25];
@@ -535,6 +595,11 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopC03);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaC03);
     printf ("\n");
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderC03 = (float)populacaoC03 + areaC03 + PIBC03 + (float)N_Pontos_TuristicosC03 + (100 - densidadepopC03) + PIBpercapitaC03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderC03);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código C04:
 
@@ -580,6 +645,11 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaC04);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderC04 = (float)populacaoC04 + areaC04 + PIBC04 + (float)N_Pontos_TuristicosC04 + (100 - densidadepopC04) + PIBpercapitaC04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderC04);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código D01:
 
@@ -629,6 +699,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopD01);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaD01);
     printf ("\n");
+    
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderD01 = (float)populacaoD01 + areaD01 + PIBD01 + (float)N_Pontos_TuristicosD01 + (100 - densidadepopD01) + PIBpercapitaD01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderD01);
+    printf ("...\n\n\n");
 
      // Definindo variáveis separadas para cada atributo da cidade código D02:
 
@@ -672,6 +748,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopD02);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaD02);
     printf ("\n");
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderD02 = (float)populacaoD02 + areaD02 + PIBD02 + (float)N_Pontos_TuristicosD02 + (100 - densidadepopD02) + PIBpercapitaD02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderD02);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código D03:
 
@@ -717,6 +799,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaD03);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderD03 = (float)populacaoD03 + areaD03 + PIBD03 + (float)N_Pontos_TuristicosD03 + (100 - densidadepopD03) + PIBpercapitaD03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderD03);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código D04:
 
     char estadoD04[20], codigoD04[3], nomeD04[25];
@@ -761,6 +849,11 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaD04);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderD04 = (float)populacaoD04 + areaD04 + PIBD04 + (float)N_Pontos_TuristicosD04 + (100 - densidadepopD04) + PIBpercapitaD04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderD04);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código E01:
 
@@ -810,6 +903,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopE01);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaE01);
     printf ("\n");
+    
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderE01 = (float)populacaoE01 + areaE01 + PIBE01 + (float)N_Pontos_TuristicosE01 + (100 - densidadepopE01) + PIBpercapitaE01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderE01);
+    printf ("...\n\n\n");
 
      // Definindo variáveis separadas para cada atributo da cidade código E02:
 
@@ -853,6 +952,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopE02);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaE02);
     printf ("\n");
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderE02 = (float)populacaoE02 + areaE02 + PIBE02 + (float)N_Pontos_TuristicosE02 + (100 - densidadepopE02) + PIBpercapitaE02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderE02);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código E03:
 
@@ -898,6 +1003,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaE03);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderE03 = (float)populacaoE03 + areaE03 + PIBE03 + (float)N_Pontos_TuristicosE03 + (100 - densidadepopE03) + PIBpercapitaE03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderE03);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código E04:
 
     char estadoE04[20], codigoE04[3], nomeE04[25];
@@ -942,6 +1053,11 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaE04);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderE04 = (float)populacaoE04 + areaE04 + PIBE04 + (float)N_Pontos_TuristicosE04 + (100 - densidadepopE04) + PIBpercapitaE04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderE04);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código F01:
 
@@ -991,6 +1107,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopF01);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaF01);
     printf ("\n");
+    
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderF01 = (float)populacaoF01 + areaF01 + PIBF01 + (float)N_Pontos_TuristicosF01 + (100 - densidadepopF01) + PIBpercapitaF01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderF01);
+    printf ("...\n\n\n");
 
      // Definindo variáveis separadas para cada atributo da cidade código F02:
 
@@ -1034,6 +1156,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopF02);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaF02);
     printf ("\n");
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderF02 = (float)populacaoF02 + areaF02 + PIBF02 + (float)N_Pontos_TuristicosF02 + (100 - densidadepopF02) + PIBpercapitaF02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderF02);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código F03:
 
@@ -1079,6 +1207,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaF03);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderF03 = (float)populacaoF03 + areaF03 + PIBF03 + (float)N_Pontos_TuristicosF03 + (100 - densidadepopF03) + PIBpercapitaF03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderF03);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código F04:
 
     char estadoF04[20], codigoF04[3], nomeF04[25];
@@ -1123,6 +1257,11 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaF04);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderF04 = (float)populacaoF04 + areaF04 + PIBF04 + (float)N_Pontos_TuristicosF04 + (100 - densidadepopF04) + PIBpercapitaF04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderF04);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código G01:
 
@@ -1161,7 +1300,6 @@ int main() {
        
     float PIBpercapitaG01 = PIBG01 / populacaoG01;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código G01
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade G01: %s", nomeG01);
@@ -1172,6 +1310,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopG01);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaG01);
     printf ("\n");
+    
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderG01 = (float)populacaoG01 + areaG01 + PIBG01 + (float)N_Pontos_TuristicosG01 + (100 - densidadepopG01) + PIBpercapitaG01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderG01);
+    printf ("...\n\n\n");
 
      // Definindo variáveis separadas para cada atributo da cidade código G02:
 
@@ -1216,6 +1360,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaG02);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderG02 = (float)populacaoG02 + areaG02 + PIBG02 + (float)N_Pontos_TuristicosG02 + (100 - densidadepopG02) + PIBpercapitaG02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderG02);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código G03:
 
     char estadoG03[20], codigoG03[3], nomeG03[25];
@@ -1248,7 +1398,6 @@ int main() {
        
     float PIBpercapitaG03 = PIBG03 / populacaoG03;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código G03
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade G03: %s", nomeG03);
@@ -1265,6 +1414,12 @@ int main() {
     char estadoG04[20], codigoG04[3], nomeG04[25];
     int populacaoG04, N_Pontos_TuristicosG04;
     float areaG04, PIBG04;
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderG03 = (float)populacaoG03 + areaG03 + PIBG03 + (float)N_Pontos_TuristicosG03 + (100 - densidadepopG03) + PIBpercapitaG03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderG03);
+    printf ("...\n\n\n");
 
     // Solicita ao usuário os dados das cartas Código G04
 
@@ -1292,7 +1447,6 @@ int main() {
        
     float PIBpercapitaG04 = PIBG04 / populacaoG04;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código G04
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade G04: %s", nomeG04);
@@ -1304,6 +1458,11 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaG04);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderG04 = (float)populacaoG04 + areaG04 + PIBG04 + (float)N_Pontos_TuristicosG04 + (100 - densidadepopG04) + PIBpercapitaG04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderG04);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código H01:
 
@@ -1342,7 +1501,6 @@ int main() {
        
     float PIBpercapitaH01 = PIBH01 / populacaoH01;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código H01
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade H01: %s", nomeH01);
@@ -1353,6 +1511,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopH01);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaH01);
     printf ("\n");
+    
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderH01 = (float)populacaoH01 + areaH01 + PIBH01 + (float)N_Pontos_TuristicosH01 + (100 - densidadepopH01) + PIBpercapitaH01;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderH01);
+    printf ("...\n\n\n");
 
      // Definindo variáveis separadas para cada atributo da cidade código H02:
 
@@ -1397,6 +1561,12 @@ int main() {
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaH02);
     printf ("\n");
 
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderH02 = (float)populacaoH02 + areaH02 + PIBH02 + (float)N_Pontos_TuristicosH02 + (100 - densidadepopH02) + PIBpercapitaH02;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderH02);
+    printf ("...\n\n\n");
+
     // Definindo variáveis separadas para cada atributo da cidade código H03:
 
     char estadoH03[20], codigoH03[3], nomeH03[25];
@@ -1429,7 +1599,6 @@ int main() {
        
     float PIBpercapitaH03 = PIBH03 / populacaoH03;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código H03
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade H03: %s", nomeH03);
@@ -1440,6 +1609,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopH03);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaH03);
     printf ("\n");
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderH03 = (float)populacaoH03 + areaH03 + PIBH03 + (float)N_Pontos_TuristicosH03 + (100 - densidadepopH03) + PIBpercapitaH03;
+    printf ("\nSuper Poder da carta: %.2f\n\n", SuperPoderH03);
+    printf ("...\n\n\n");
 
     // Definindo variáveis separadas para cada atributo da cidade código H04:
 
@@ -1473,7 +1648,6 @@ int main() {
        
     float PIBpercapitaH04 = PIBH04 / populacaoH04;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código H04
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade H04: %s", nomeH04);
@@ -1484,6 +1658,12 @@ int main() {
     printf ("\nDensidade Populacional: %.2f", densidadepopH04);
     printf ("\nPIB Per Capita: %.2f", PIBpercapitaH04);
     printf ("\n");
+
+    // Super Poder (float): soma de todas as propriedades, ajustada conforme a lógica do super poder.
+    
+    float SuperPoderH04 = (float)populacaoH04 + areaH04 + PIBH04 + (float)N_Pontos_TuristicosH04 + (100 - densidadepopH04) + PIBpercapitaH04;
+    printf ("\nSuper Poder da carta: %.2f", SuperPoderH04);
+    printf ("...\n\n\n");
 
 
     return 0;
