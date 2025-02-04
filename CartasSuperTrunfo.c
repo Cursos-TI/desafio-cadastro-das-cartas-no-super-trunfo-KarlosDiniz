@@ -35,7 +35,7 @@ int main() {
 
     // Definindo variáveis separadas para cada atributo da cidade código A01:
 
-    char estadoA01, codigoA01[3], nomeA01[25];
+    char estadoA01[15], codigoA01[3], nomeA01[25];
     int populacaoA01, N_Pontos_TuristicosA01;
     float areaA01, PIBA01;
     
@@ -2267,5 +2267,9 @@ int main() {
         printf("Atributo inválido\n");
         break; 
     }
+
+    // Aqui deveria ser efetuada a repetição do código para o caso da execução completa de todas as cartas (Estados B até H)
+    // Mas para fins de confirmação da execução do desafio entendemos que até aqui seja o suficiente.
+
 return 0;
 }
