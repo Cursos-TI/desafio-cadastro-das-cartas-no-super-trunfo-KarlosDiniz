@@ -5,7 +5,6 @@
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 
-
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
@@ -18,10 +17,10 @@ int main() {
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    /* INICIANDO O DESAFIO
-       Iniciando a codificação será impresso o Título: 
-    */
 
+    // INICIANDO O DESAFIO
+    // Iniciando a codificação será impresso o Título: 
+    
     printf ("*** Desafio: Cartas Super Trunfo - Países ***\n\n\n");
 
     /* Na sequencia será informando ao usuário que o cadastramento das cidades e suas respectivas informações 
@@ -39,41 +38,34 @@ int main() {
 
     // Definindo variáveis separadas para cada atributo da cidade código A01:
 
-    char estadoA01[20], codigoA01[3], nomeA01[25];
+    char estadoA01[15], codigoA01[3], nomeA01[25];
     int populacaoA01, N_Pontos_TuristicosA01;
     float areaA01, PIBA01;
     
     // Solicitando ao usuário os dados das cartas Código A 
 
-    printf ("\nEntre com o nome do primeiro Estado, com Código A:\nNome Estado:\n");
-    scanf (" %s", &estadoA01);
+   printf ("\nEntre com o nome do primeiro Estado, com Código A:\nNome Estado:\n");
+   scanf (" %s", &estadoA01);
 
     // Solicita ao usuário os dados das cartas Código A01
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoA01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeA01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoA01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaA01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBA01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosA01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopA01 = populacaoA01 / areaA01;
-       
     float PIBpercapitaA01 = PIBA01 / populacaoA01;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código A01
     
@@ -92,7 +84,6 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderA01);
     printf ("...\n\n\n");
 
-
     // Aqui deste trecho em diante é efetuada a repetição dos códigos de forma que todas as cartas recebam as informações pelo usuário
 
     // Definindo variáveis separadas para cada atributo da cidade código A02:
@@ -105,26 +96,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoA02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeA02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoA02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaA02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBA02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosA02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopA02 = populacaoA02 / areaA02;
-       
     float PIBpercapitaA02 = PIBA02 / populacaoA02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código A02
@@ -154,26 +139,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoA03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeA03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoA03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaA03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBA03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosA03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopA03 = populacaoA03 / areaA03;
-       
     float PIBpercapitaA03 = PIBA03 / populacaoA03;
 
 
@@ -204,28 +183,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoA04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeA04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoA04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaA04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBA04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosA04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopA04 = populacaoA04 / areaA04;
-       
     float PIBpercapitaA04 = PIBA04 / populacaoA04;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código A04
     
@@ -244,12 +216,14 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderA04);
     printf ("...\n\n\n");
 
+   /* Deixando as linhas das demais cidades de B01 até o final (H4) comentadas para facilitar os testes com a inclusão de apenas 04 cidades
+
     // Definindo variáveis separadas para cada atributo da cidade código B01:
 
     char estadoB01[20], codigoB01[3], nomeB01[25];
     int populacaoB01, N_Pontos_TuristicosB01;
     float areaB01, PIBB01;
-
+   
     // Solicitando ao usuário os dados das cartas Código B 
 
     printf ("\nEntre com o nome do Segundo Estado, com Código B:\nNome Estado:\n");
@@ -259,28 +233,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoB01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeB01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoB01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaB01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBB01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosB01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopB01 = populacaoB01 / areaB01;
-       
     float PIBpercapitaB01 = PIBB01 / populacaoB01;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código B01
     
@@ -309,26 +276,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoB02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeB02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoB02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaB02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBB02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosB02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopB02 = populacaoB02 / areaB02;
-       
     float PIBpercapitaB02 = PIBB02 / populacaoB02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código B02
@@ -358,28 +319,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoB03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeB03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoB03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaB03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBB03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosB03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopB03 = populacaoB03 / areaB03;
-       
     float PIBpercapitaB03 = PIBB03 / populacaoB03;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código B03
     
@@ -408,28 +362,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoB04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeB04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoB04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaB04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBB04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosB04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopB04 = populacaoB04 / areaB04;
-       
     float PIBpercapitaB04 = PIBB04 / populacaoB04;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código B04
     
@@ -463,28 +410,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoC01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeC01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoC01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaC01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBC01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosC01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopC01 = populacaoC01 / areaC01;
-       
     float PIBpercapitaC01 = PIBC01 / populacaoC01;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código C01
     
@@ -513,26 +453,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoC02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeC02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoC02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaC02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBC02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosC02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopC02 = populacaoC02 / areaC02;
-       
     float PIBpercapitaC02 = PIBC02 / populacaoC02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código C02
@@ -562,28 +496,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoC03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeC03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoC03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaC03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBC03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosC03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopC03 = populacaoC03 / areaC03;
-       
     float PIBpercapitaC03 = PIBC03 / populacaoC03;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código C03
     
@@ -611,26 +538,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoC04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeC04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoC04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaC04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBC04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosC04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopC04 = populacaoC04 / areaC04;
-       
     float PIBpercapitaC04 = PIBC04 / populacaoC04;
 
 
@@ -666,28 +587,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoD01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeD01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoD01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaD01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBD01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosD01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopD01 = populacaoD01 / areaD01;
-       
     float PIBpercapitaD01 = PIBD01 / populacaoD01;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código D01
     
@@ -706,7 +620,7 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderD01);
     printf ("...\n\n\n");
 
-     // Definindo variáveis separadas para cada atributo da cidade código D02:
+    // Definindo variáveis separadas para cada atributo da cidade código D02:
 
     char estadoD02[20], codigoD02[3], nomeD02[25];
     int populacaoD02, N_Pontos_TuristicosD02;
@@ -716,26 +630,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoD02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeD02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoD02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaD02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBD02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosD02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopD02 = populacaoD02 / areaD02;
-       
     float PIBpercapitaD02 = PIBD02 / populacaoD02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código D02
@@ -765,28 +673,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoD03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeD03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoD03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaD03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBD03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosD03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopD03 = populacaoD03 / areaD03;
-       
     float PIBpercapitaD03 = PIBD03 / populacaoD03;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código D03
     
@@ -815,28 +716,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoD04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeD04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoD04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaD04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBD04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosD04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopD04 = populacaoD04 / areaD04;
-       
     float PIBpercapitaD04 = PIBD04 / populacaoD04;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código D04
     
@@ -870,28 +764,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoE01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeE01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoE01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaE01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBE01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosE01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopE01 = populacaoE01 / areaE01;
-       
     float PIBpercapitaE01 = PIBE01 / populacaoE01;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código E01
     
@@ -920,26 +807,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoE02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeE02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoE02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaE02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBE02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosE02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopE02 = populacaoE02 / areaE02;
-       
     float PIBpercapitaE02 = PIBE02 / populacaoE02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código E02
@@ -969,28 +850,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoE03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeE03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoE03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaE03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBE03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosE03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopE03 = populacaoE03 / areaE03;
-       
     float PIBpercapitaE03 = PIBE03 / populacaoE03;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código E03
     
@@ -1019,28 +893,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoE04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeE04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoE04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaE04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBE04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosE04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopE04 = populacaoE04 / areaE04;
-       
     float PIBpercapitaE04 = PIBE04 / populacaoE04;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código E04
     
@@ -1074,28 +941,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoF01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeF01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoF01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaF01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBF01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosF01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopF01 = populacaoF01 / areaF01;
-       
     float PIBpercapitaF01 = PIBF01 / populacaoF01;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código F01
     
@@ -1124,26 +984,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoF02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeF02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoF02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaF02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBF02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosF02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopF02 = populacaoF02 / areaF02;
-       
     float PIBpercapitaF02 = PIBF02 / populacaoF02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código F02
@@ -1173,28 +1027,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoF03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeF03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoF03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaF03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBF03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosF03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopF03 = populacaoF03 / areaF03;
-       
     float PIBpercapitaF03 = PIBF03 / populacaoF03;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código F03
     
@@ -1223,28 +1070,21 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoF04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeF04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoF04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaF04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBF04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosF04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopF04 = populacaoF04 / areaF04;
-       
     float PIBpercapitaF04 = PIBF04 / populacaoF04;
-
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código F04
     
@@ -1278,26 +1118,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoG01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeG01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoG01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaG01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBG01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosG01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopG01 = populacaoG01 / areaG01;
-       
     float PIBpercapitaG01 = PIBG01 / populacaoG01;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código G01
@@ -1317,7 +1151,7 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderG01);
     printf ("...\n\n\n");
 
-     // Definindo variáveis separadas para cada atributo da cidade código G02:
+    // Definindo variáveis separadas para cada atributo da cidade código G02:
 
     char estadoG02[20], codigoG02[3], nomeG02[25];
     int populacaoG02, N_Pontos_TuristicosG02;
@@ -1327,26 +1161,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoG02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeG02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoG02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaG02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBG02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosG02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopG02 = populacaoG02 / areaG02;
-       
     float PIBpercapitaG02 = PIBG02 / populacaoG02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código G02
@@ -1376,26 +1204,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoG03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeG03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoG03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaG03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBG03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosG03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopG03 = populacaoG03 / areaG03;
-       
     float PIBpercapitaG03 = PIBG03 / populacaoG03;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código G03
@@ -1425,26 +1247,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoG04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeG04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoG04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaG04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBG04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosG04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopG04 = populacaoG04 / areaG04;
-       
     float PIBpercapitaG04 = PIBG04 / populacaoG04;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código G04
@@ -1479,26 +1295,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoH01);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeH01);
-
     printf ("População:\n");
     scanf (" %d", &populacaoH01);
-    
     printf ("Área:\n");
     scanf (" %f", &areaH01);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBH01);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosH01);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopH01 = populacaoH01 / areaH01;
-       
     float PIBpercapitaH01 = PIBH01 / populacaoH01;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código H01
@@ -1518,7 +1328,7 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderH01);
     printf ("...\n\n\n");
 
-     // Definindo variáveis separadas para cada atributo da cidade código H02:
+    // Definindo variáveis separadas para cada atributo da cidade código H02:
 
     char estadoH02[20], codigoH02[3], nomeH02[25];
     int populacaoH02, N_Pontos_TuristicosH02;
@@ -1528,26 +1338,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoH02);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeH02);
-
     printf ("População:\n");
     scanf (" %d", &populacaoH02);
-    
     printf ("Área:\n");
     scanf (" %f", &areaH02);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBH02);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosH02);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopH02 = populacaoH02 / areaH02;
-       
     float PIBpercapitaH02 = PIBH02 / populacaoH02;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código H02
@@ -1577,26 +1381,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoH03);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeH03);
-
     printf ("População:\n");
     scanf (" %d", &populacaoH03);
-    
     printf ("Área:\n");
     scanf (" %f", &areaH03);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBH03);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosH03);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopH03 = populacaoH03 / areaH03;
-       
     float PIBpercapitaH03 = PIBH03 / populacaoH03;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código H03
@@ -1626,26 +1424,20 @@ int main() {
 
     printf ("\nEntre com os dados da cidade, do primeiro Estado:\nCódigo Cidade:\n");
     scanf (" %s", &codigoH04);
-
     printf ("Nome:\n");
     scanf (" %s", &nomeH04);
-
     printf ("População:\n");
     scanf (" %d", &populacaoH04);
-    
     printf ("Área:\n");
     scanf (" %f", &areaH04);
-
     printf ("PIB:\n");
     scanf (" %f", &PIBH04);
-
     printf ("Número de pontos turísticos\n");
     scanf (" %d", &N_Pontos_TuristicosH04);
 
     // Calculando a Densidade Populacional e o PIB Per Capita
 
     float densidadepopH04 = populacaoH04 / areaH04;
-       
     float PIBpercapitaH04 = PIBH04 / populacaoH04;
 
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código H04
@@ -1665,6 +1457,824 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderH04);
     printf ("...\n\n\n");
 
+    //Finalizando o trecho marcado como comentário desde cidade B01
+    */
 
-    return 0;
+   /* Comparação das cartas
+      A parte da comparação acontecerá da seguinte maneira:
+      O sistema permitirá ao usuário comparar duas cartas, exibindo todas as propriedades de cada uma.
+      O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades selecionadas.
+      A propriedade de densidade populacional será considerada vencedora quando tiver o menor valor, enquanto as outras propriedades vencerão quando tiverem o maior valor.
+      Cada carta terá um super poder que é a soma de todas as propriedades (população, área, PIB, PIB per capta e densidade populacional invertida para comparação e número de pontos turísticos).
+      A saída da comparação será 1 ou 0, caso a relação seja verdadeira ou falsa. Se o resultado da comparação for 1, a carta 1 ganhou; se o resultado for 0, a carta 2 ganhou.
+      O sistema deve imprimir o resultado das comparações para cada propriedade.
+   */
+
+    // O primeiro usuário escolhe as suas cartas e será impressa a confirmação dos dados
+
+   printf("*** Vamos começar o Jogo***\n\n");
+    int cartaescolhida1, cartaescolhida2;
+    printf("Escolha uma carta pelo código (disponíveis no momento apenas: A01, A02, A03 e A04):\n");
+    printf("1. Carta Código A01\n");
+    printf("2. Carta Código A02\n");
+    printf("3. Carta Código A03\n"); 
+    printf("4. Carta Código A04\n");
+    scanf("%d", &cartaescolhida1);
+
+    switch (cartaescolhida1)
+    {
+    case 1:
+        printf("\nA Carta escolhida foi da Cidade: %s\n", nomeA01);
+        printf("População: %d\n", populacaoA01);
+        printf("Área: %.2f\n", areaA01);
+        printf("PIB: %.2f\n", PIBA01);
+        printf("Número de Pontos Turísticos: %d\n", N_Pontos_TuristicosA01);
+        printf("Densidade Populacional: %.2f\n", densidadepopA01);
+        printf("PIB Per Capita: %.2f\n", PIBpercapitaA01);
+        break;
+    case 2:
+        printf("\nA Carta escolhida foi da Cidade: %s\n", nomeA02);
+        printf("População: %d\n", populacaoA02);
+        printf("Área: %.2f\n", areaA02);
+        printf("PIB: %.2f\n", PIBA02);
+        printf("Número de Pontos Turísticos: %d\n", N_Pontos_TuristicosA02);
+        printf("Densidade Populacional: %.2f\n", densidadepopA02);
+        printf("PIB Per Capita: %.2f\n", PIBpercapitaA02);
+        break;
+    case 3:
+        printf("\nA Carta escolhida foi da Cidade: %s\n", nomeA03);
+        printf("População: %d\n", populacaoA03);
+        printf("Área: %.2f\n", areaA03);
+        printf("PIB: %.2f\n", PIBA03);
+        printf("Número de Pontos Turísticos: %d\n", N_Pontos_TuristicosA03);
+        printf("Densidade Populacional: %.2f\n", densidadepopA03);
+        printf("PIB Per Capita: %.2f\n", PIBpercapitaA03);
+        break;
+    case 4:
+        printf("\nA Carta escolhida foi da Cidade: %s\n", nomeA04);
+        printf("População: %d\n", populacaoA04);
+        printf("Área: %.2f\n", areaA04);
+        printf("PIB: %.2f\n", PIBA04);
+        printf("Número de Pontos Turísticos: %d\n", N_Pontos_TuristicosA04);
+        printf("Densidade Populacional: %.2f\n", densidadepopA04);
+        printf("PIB Per Capita: %.2f\n", PIBpercapitaA04);
+        break;
+    default:
+        printf("Opção inválida");
+        break;
     }
+    
+    // O segundo usuário escolhe sua carta e não haverá a impressão com a confirmação dos dados neste momento
+    printf("\n\nO segundo usuário pode agora escolher a sua carta:\n");
+    printf("Escolha uma carta diferente do primeiro usuário, também pelo código (disponíveis no momento apenas: A0... :\n");
+    printf("1. Carta Código A01\n");
+    printf("2. Carta Código A02\n");
+    printf("3. Carta Código A03\n"); 
+    printf("4. Carta Código A04\n");
+    scanf("%d", &cartaescolhida2);
+    
+    // verifica se a escolha do segundo usuário não é idêntica à do primeiro
+    if (cartaescolhida2 == cartaescolhida1) {
+        printf("Você não pode escolher a mesma carta do usuário anterior. Faça uma nova escolha diferente:\n");
+        scanf("%s", &cartaescolhida2);
+    } 
+
+    // O primeiro usuário escolhe o atributo desejado e é efetuada a comparação das cartas, determinando o vencedor
+
+    int atributoescolhido;
+    printf("\n\n\nPrimeiro Jogador, escolha 01 atributo da sua carta para iniciar a comparação:\n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n"); 
+    printf("4. Número de Pontos Turísticos\n");
+    printf("5. Densidade Populacional (ganha o menor)\n");
+    printf("6. PIB Per Capita\n");
+    printf("7. Super Poder (somatório de todos os dados\n");
+    scanf("%d", &atributoescolhido);
+
+    // Comparação das cartas com base no atributo escolhido
+
+    switch (atributoescolhido) {
+    case 1: // População
+        if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
+            if (populacaoA01 > populacaoA02) {
+                printf("A carta A01 venceu com a população de %d contra %d da carta A02\n", populacaoA01, populacaoA02);
+            } else if (populacaoA01 < populacaoA02) {
+                printf("A carta A02 venceu com a população de %d contra %d da carta A01\n", populacaoA02, populacaoA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
+            if (populacaoA01 > populacaoA03) {
+                printf("A carta A01 venceu com a população de %d contra %d da carta A03\n", populacaoA01, populacaoA03);
+            } else if (populacaoA01 < populacaoA03) {
+                printf("A carta A03 venceu com a população de %d contra %d da carta A01\n", populacaoA03, populacaoA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
+            if (populacaoA01 > populacaoA04) {
+                printf("A carta A01 venceu com a população de %d contra %d da carta A04\n", populacaoA01, populacaoA04);
+            } else if (populacaoA01 < populacaoA04) {
+                printf("A carta A04 venceu com a população de %d contra %d da carta A01\n", populacaoA04, populacaoA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA01);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
+            if (populacaoA02 > populacaoA01) {
+                printf("A carta A02 venceu com a população de %d contra %d da carta A01\n", populacaoA02, populacaoA01);
+            } else if (populacaoA02 < populacaoA01) {
+                printf("A carta A01 venceu com a população de %d contra %d da carta A02\n", populacaoA01, populacaoA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
+            if (populacaoA02 > populacaoA03) {
+                printf("A carta A02 venceu com a população de %d contra %d da carta A03\n", populacaoA02, populacaoA03);
+            } else if (populacaoA02 < populacaoA03) {
+                printf("A carta A03 venceu com a população de %d contra %d da carta A02\n", populacaoA03, populacaoA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
+            if (populacaoA02 > populacaoA04) {
+                printf("A carta A02 venceu com a população de %d contra %d da carta A04\n", populacaoA02, populacaoA04);
+            } else if (populacaoA02 < populacaoA04) {
+                printf("A carta A04 venceu com a população de %d contra %d da carta A02\n", populacaoA04, populacaoA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA02);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
+            if (populacaoA03 > populacaoA01) {
+                printf("A carta A03 venceu com a população de %d contra %d da carta A01\n", populacaoA03, populacaoA01);
+            } else if (populacaoA03 < populacaoA01) {
+                printf("A carta A01 venceu com a população de %d contra %d da carta A03\n", populacaoA01, populacaoA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
+            if (populacaoA03 > populacaoA02) {
+                printf("A carta A03 venceu com a população de %d contra %d da carta A02\n", populacaoA03, populacaoA02);
+            } else if (populacaoA03 < populacaoA02) {
+                printf("A carta A02 venceu com a população de %d contra %d da carta A03\n", populacaoA02, populacaoA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
+            if (populacaoA03 > populacaoA04) {
+                printf("A carta A03 venceu com a população de %d contra %d da carta A04\n", populacaoA03, populacaoA04);
+            } else if (populacaoA03 < populacaoA04) {
+                printf("A carta A04 venceu com a população de %d contra %d da carta A03\n", populacaoA04, populacaoA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA03);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
+            if (populacaoA04 > populacaoA01) {
+                printf("A carta A04 venceu com a população de %d contra %d da carta A01\n", populacaoA04, populacaoA01);
+            } else if (populacaoA04 < populacaoA01) {
+                printf("A carta A01 venceu com a população de %d contra %d da carta A04\n", populacaoA01, populacaoA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
+            if (populacaoA04 > populacaoA02) {
+                printf("A carta A04 venceu com a população de %d contra %d da carta A02\n", populacaoA04, populacaoA02);
+            } else if (populacaoA04 < populacaoA02) {
+                printf("A carta A02 venceu com a população de %d contra %d da carta A04\n", populacaoA02, populacaoA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
+            if (populacaoA04 > populacaoA03) {
+                printf("A carta A04 venceu com a população de %d contra %d da carta A03\n", populacaoA04, populacaoA03);
+            } else if (populacaoA04 < populacaoA03) {
+                printf("A carta A03 venceu com a população de %d contra %d da carta A04\n", populacaoA03, populacaoA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA04);
+            }
+        } else {
+            printf("Opção inválida\n");           
+            break;}
+        
+
+    case 2: // Área
+        if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
+            if (areaA01 > areaA02) {
+                printf("A carta A01 venceu com a Área de %d contra %d da carta A02\n", areaA01, areaA02);
+            } else if (areaA01 < areaA02) {
+                printf("A carta A02 venceu com a Área de %d contra %d da carta A01\n", areaA02, areaA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
+            if (areaA01 > areaA03) {
+                printf("A carta A01 venceu com a Área de %d contra %d da carta A03\n", areaA01, areaA03);
+            } else if (areaA01 < areaA03) {
+                printf("A carta A03 venceu com a Área de %d contra %d da carta A01\n", areaA03, areaA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
+            if (areaA01 > areaA04) {
+                printf("A carta A01 venceu com a Área de %d contra %d da carta A04\n", areaA01, areaA04);
+            } else if (areaA01 < areaA04) {
+                printf("A carta A04 venceu com a Área de %d contra %d da carta A01\n", areaA04, areaA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA01);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
+            if (areaA02 > areaA01) {
+                printf("A carta A02 venceu com a Área de %d contra %d da carta A01\n", areaA02, areaA01);
+            } else if (areaA02 < areaA01) {
+                printf("A carta A01 venceu com a Área de %d contra %d da carta A02\n", areaA01, areaA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
+            if (areaA02 > areaA03) {
+                printf("A carta A02 venceu com a Área de %d contra %d da carta A03\n", areaA02, areaA03);
+            } else if (areaA02 < areaA03) {
+                printf("A carta A03 venceu com a Área de %d contra %d da carta A02\n", areaA03, areaA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
+            if (areaA02 > areaA04) {
+                printf("A carta A02 venceu com a Área de %d contra %d da carta A04\n", areaA02, areaA04);
+            } else if (areaA02 < areaA04) {
+                printf("A carta A04 venceu com a Área de %d contra %d da carta A02\n", areaA04, areaA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA02);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
+            if (areaA03 > areaA01) {
+                printf("A carta A03 venceu com a Área de %d contra %d da carta A01\n", areaA03, areaA01);
+            } else if (areaA03 < areaA01) {
+                printf("A carta A01 venceu com a Área de %d contra %d da carta A03\n", areaA01, areaA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
+            if (areaA03 > areaA02) {
+                printf("A carta A03 venceu com a Área de %d contra %d da carta A02\n", areaA03, areaA02);
+            } else if (areaA03 < areaA02) {
+                printf("A carta A02 venceu com a Área de %d contra %d da carta A03\n", areaA02, areaA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
+            if (areaA03 > areaA04) {
+                printf("A carta A03 venceu com a Área de %d contra %d da carta A04\n", areaA03, areaA04);
+            } else if (areaA03 < areaA04) {
+                printf("A carta A04 venceu com a Área de %d contra %d da carta A03\n", areaA04, areaA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA03);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
+            if (areaA04 > areaA01) {
+                printf("A carta A04 venceu com a Área de %d contra %d da carta A01\n", areaA04, areaA01);
+            } else if (areaA04 < areaA01) {
+                printf("A carta A01 venceu com a Área de %d contra %d da carta A04\n", areaA01, areaA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
+            if (areaA04 > areaA02) {
+                printf("A carta A04 venceu com a Área de %d contra %d da carta A02\n", areaA04, areaA02);
+            } else if (areaA04 < areaA02) {
+                printf("A carta A02 venceu com a Área de %d contra %d da carta A04\n", areaA02, areaA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
+            if (areaA04 > areaA03) {
+                printf("A carta A04 venceu com a Área de %d contra %d da carta A03\n", areaA04, areaA03);
+            } else if (areaA04 < areaA03) {
+                printf("A carta A03 venceu com a Área de %d contra %d da carta A04\n", areaA03, areaA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Área de %d\n", areaA04);
+            }
+        } else {
+            printf("Opção inválida\n");
+            break; }
+        
+
+    case 3: // P.I.B.
+        if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
+            if (PIBA01 > PIBA02) {
+                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA01, PIBA02);
+            } else if (PIBA01 < PIBA02) {
+                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA02, PIBA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
+            if (PIBA01 > PIBA03) {
+                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA01, PIBA03);
+            } else if (PIBA01 < PIBA03) {
+                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA03, PIBA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
+            if (PIBA01 > PIBA04) {
+                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA01, PIBA04);
+            } else if (PIBA01 < PIBA04) {
+                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA04, PIBA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA01);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
+            if (PIBA02 > PIBA01) {
+                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA02, PIBA01);
+            } else if (PIBA02 < PIBA01) {
+                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA01, PIBA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
+            if (PIBA02 > PIBA03) {
+                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA02, PIBA03);
+            } else if (PIBA02 < PIBA03) {
+                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA03, PIBA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
+            if (PIBA02 > PIBA04) {
+                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA02, PIBA04);
+            } else if (PIBA02 < PIBA04) {
+                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA04, PIBA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA02);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
+            if (PIBA03 > PIBA01) {
+                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA03, PIBA01);
+            } else if (PIBA03 < PIBA01) {
+                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA01, PIBA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
+            if (PIBA03 > PIBA02) {
+                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA03, PIBA02);
+            } else if (PIBA03 < PIBA02) {
+                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA02, PIBA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
+            if (PIBA03 > PIBA04) {
+                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA03, PIBA04);
+            } else if (PIBA03 < PIBA04) {
+                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA04, PIBA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA03);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
+            if (PIBA04 > PIBA01) {
+                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA04, PIBA01);
+            } else if (PIBA04 < PIBA01) {
+                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA01, PIBA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
+            if (PIBA04 > PIBA02) {
+                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA04, PIBA02);
+            } else if (PIBA04 < PIBA02) {
+                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA02, PIBA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
+            if (PIBA04 > PIBA03) {
+                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA04, PIBA03);
+            } else if (PIBA04 < PIBA03) {
+                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA03, PIBA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA04);
+            }
+        } else {
+            printf("Opção inválida\n");
+            break;
+        }
+
+    case 4: // Número de Pontos Turísticos
+        if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
+            if (N_Pontos_TuristicosA01 > N_Pontos_TuristicosA02) {
+                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA02);
+            } else if (N_Pontos_TuristicosA01 < N_Pontos_TuristicosA02) {
+                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
+            if (N_Pontos_TuristicosA01 > N_Pontos_TuristicosA03) {
+                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA03);
+            } else if (N_Pontos_TuristicosA01 < N_Pontos_TuristicosA03) {
+                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
+            if (N_Pontos_TuristicosA01 > N_Pontos_TuristicosA04) {
+                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA04);
+            } else if (N_Pontos_TuristicosA01 < N_Pontos_TuristicosA04) {
+                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
+            if (N_Pontos_TuristicosA02 > N_Pontos_TuristicosA01) {
+                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA01);
+            } else if (N_Pontos_TuristicosA02 < N_Pontos_TuristicosA01) {
+                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
+            if (N_Pontos_TuristicosA02 > N_Pontos_TuristicosA03) {
+                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA03);
+            } else if (N_Pontos_TuristicosA02 < N_Pontos_TuristicosA03) {
+                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
+            if (N_Pontos_TuristicosA02 > N_Pontos_TuristicosA04) {
+                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA04);
+            } else if (N_Pontos_TuristicosA02 < N_Pontos_TuristicosA04) {
+                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
+            if (N_Pontos_TuristicosA03 > N_Pontos_TuristicosA01) {
+                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA01);
+            } else if (N_Pontos_TuristicosA03 < N_Pontos_TuristicosA01) {
+                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
+            if (N_Pontos_TuristicosA03 > N_Pontos_TuristicosA02) {
+                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA02);
+            } else if (N_Pontos_TuristicosA03 < N_Pontos_TuristicosA02) {
+                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
+            if (N_Pontos_TuristicosA03 > N_Pontos_TuristicosA04) {
+                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA04);
+            } else if (N_Pontos_TuristicosA03 < N_Pontos_TuristicosA04) {
+                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
+            if (N_Pontos_TuristicosA04 > N_Pontos_TuristicosA01) {
+                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA01);
+            } else if (N_Pontos_TuristicosA04 < N_Pontos_TuristicosA01) {
+                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
+            if (N_Pontos_TuristicosA04 > N_Pontos_TuristicosA02) {
+                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA02);
+            } else if (N_Pontos_TuristicosA04 < N_Pontos_TuristicosA02) {
+                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
+            if (N_Pontos_TuristicosA04 > N_Pontos_TuristicosA03) {
+                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA03);
+            } else if (N_Pontos_TuristicosA04 < N_Pontos_TuristicosA03) {
+                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
+            }
+        } else {
+            printf("Opção inválida\n");
+            break;
+        }
+
+    case 5: // Densidade Populacional
+        if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
+            if (densidadepopA01 < densidadepopA02) {
+                printf("A carta A01 venceu com a Densidade Populacional de %d contra %d da carta A02\n", densidadepopA01, densidadepopA02);
+            } else if (densidadepopA01 > densidadepopA02) {
+                printf("A carta A02 venceu com a Densidade Populacional de %d contra %d da carta A01\n", densidadepopA02, densidadepopA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
+            if (densidadepopA01 < densidadepopA03) {
+                printf("A carta A01 venceu com a Densidade Populacional de %d contra %d da carta A03\n", densidadepopA01, densidadepopA03);
+            } else if (densidadepopA01 > densidadepopA03) {
+                printf("A carta A03 venceu com a Densidade Populacional de %d contra %d da carta A01\n", densidadepopA03, densidadepopA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
+            if (densidadepopA01 < densidadepopA04) {
+                printf("A carta A01 venceu com a Densidade Populacional de %d contra %d da carta A04\n", densidadepopA01, densidadepopA04);
+            } else if (densidadepopA01 > densidadepopA04) {
+                printf("A carta A04 venceu com a Densidade Populacional de %d contra %d da carta A01\n", densidadepopA04, densidadepopA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA01);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
+            if (densidadepopA02 < densidadepopA01) {
+                printf("A carta A02 venceu com a Densidade Populacional de %d contra %d da carta A01\n", densidadepopA02, densidadepopA01);
+            } else if (densidadepopA02 > densidadepopA01) {
+                printf("A carta A01 venceu com a Densidade Populacional de %d contra %d da carta A02\n", densidadepopA01, densidadepopA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
+            if (densidadepopA02 < densidadepopA03) {
+                printf("A carta A02 venceu com a Densidade Populacional de %d contra %d da carta A03\n", densidadepopA02, densidadepopA03);
+            } else if (densidadepopA02 > densidadepopA03) {
+                printf("A carta A03 venceu com a Densidade Populacional de %d contra %d da carta A02\n", densidadepopA03, densidadepopA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
+            if (densidadepopA02 < densidadepopA04) {
+                printf("A carta A02 venceu com a Densidade Populacional de %d contra %d da carta A04\n", densidadepopA02, densidadepopA04);
+            } else if (densidadepopA02 > densidadepopA04) {
+                printf("A carta A04 venceu com a Densidade Populacional de %d contra %d da carta A02\n", densidadepopA04, densidadepopA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA02);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
+            if (densidadepopA03 < densidadepopA01) {
+                printf("A carta A03 venceu com a Densidade Populacional de %d contra %d da carta A01\n", densidadepopA03, densidadepopA01);
+            } else if (densidadepopA03 > densidadepopA01) {
+                printf("A carta A01 venceu com a Densidade Populacional de %d contra %d da carta A03\n", densidadepopA01, densidadepopA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
+            if (densidadepopA03 < densidadepopA02) {
+                printf("A carta A03 venceu com a Densidade Populacional de %d contra %d da carta A02\n", densidadepopA03, densidadepopA02);
+            } else if (densidadepopA03 > densidadepopA02) {
+                printf("A carta A02 venceu com a Densidade Populacional de %d contra %d da carta A03\n", densidadepopA02, densidadepopA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
+            if (densidadepopA03 < densidadepopA04) {
+                printf("A carta A03 venceu com a Densidade Populacional de %d contra %d da carta A04\n", densidadepopA03, densidadepopA04);
+            } else if (densidadepopA03 > densidadepopA04) {
+                printf("A carta A04 venceu com a Densidade Populacional de %d contra %d da carta A03\n", densidadepopA04, densidadepopA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA03);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
+            if (densidadepopA04 < densidadepopA01) {
+                printf("A carta A04 venceu com a Densidade Populacional de %d contra %d da carta A01\n", densidadepopA04, densidadepopA01);
+            } else if (densidadepopA04 > densidadepopA01) {
+                printf("A carta A01 venceu com a Densidade Populacional de %d contra %d da carta A04\n", densidadepopA01, densidadepopA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
+            if (densidadepopA04 < densidadepopA02) {
+                printf("A carta A04 venceu com a Densidade Populacional de %d contra %d da carta A02\n", densidadepopA04, densidadepopA02);
+            } else if (densidadepopA04 > densidadepopA02) {
+                printf("A carta A02 venceu com a Densidade Populacional de %d contra %d da carta A04\n", densidadepopA02, densidadepopA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
+            if (densidadepopA04 < densidadepopA03) {
+                printf("A carta A04 venceu com a Densidade Populacional de %d contra %d da carta A03\n", densidadepopA04, densidadepopA03);
+            } else if (densidadepopA04 > densidadepopA03) {
+                printf("A carta A03 venceu com a Densidade Populacional de %d contra %d da carta A04\n", densidadepopA03, densidadepopA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Densidade Populacional de %d\n", densidadepopA04);
+            }
+        } else {
+            printf("Opção inválida\n");
+        break;
+        }
+
+    case 6: // PIB Per Capita
+        if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
+            if (PIBpercapitaA01 > PIBpercapitaA02) {
+                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA01, PIBpercapitaA02);
+            } else if (PIBpercapitaA01 < PIBpercapitaA02) {
+                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA02, PIBpercapitaA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
+            if (PIBpercapitaA01 > PIBpercapitaA03) {
+                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA01, PIBpercapitaA03);
+            } else if (PIBpercapitaA01 < PIBpercapitaA03) {
+                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA03, PIBpercapitaA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
+            if (PIBpercapitaA01 > PIBpercapitaA04) {
+                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA01, PIBpercapitaA04);
+            } else if (PIBpercapitaA01 < PIBpercapitaA04) {
+                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA04, PIBpercapitaA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA01);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
+            if (PIBpercapitaA02 > PIBpercapitaA01) {
+                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA02, PIBpercapitaA01);
+            } else if (PIBpercapitaA02 < PIBpercapitaA01) {
+                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA01, PIBpercapitaA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
+            if (PIBpercapitaA02 > PIBpercapitaA03) {
+                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA02, PIBpercapitaA03);
+            } else if (PIBpercapitaA02 < PIBpercapitaA03) {
+                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA03, PIBpercapitaA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
+            if (PIBpercapitaA02 > PIBpercapitaA04) {
+                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA02, PIBpercapitaA04);
+            } else if (PIBpercapitaA02 < PIBpercapitaA04) {
+                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA04, PIBpercapitaA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA02);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
+            if (PIBpercapitaA03 > PIBpercapitaA01) {
+                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA03, PIBpercapitaA01);
+            } else if (PIBpercapitaA03 < PIBpercapitaA01) {
+                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA01, PIBpercapitaA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
+            if (PIBpercapitaA03 > PIBpercapitaA02) {
+                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA03, PIBpercapitaA02);
+            } else if (PIBpercapitaA03 < PIBpercapitaA02) {
+                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA02, PIBpercapitaA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
+            if (PIBpercapitaA03 > PIBpercapitaA04) {
+                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA03, PIBpercapitaA04);
+            } else if (PIBpercapitaA03 < PIBpercapitaA04) {
+                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA04, PIBpercapitaA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA03);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
+            if (PIBpercapitaA04 > PIBpercapitaA01) {
+                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA04, PIBpercapitaA01);
+            } else if (PIBpercapitaA04 < PIBpercapitaA01) {
+                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA01, PIBpercapitaA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
+            if (PIBpercapitaA04 > PIBpercapitaA02) {
+                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA04, PIBpercapitaA02);
+            } else if (PIBpercapitaA04 < PIBpercapitaA02) {
+                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA02, PIBpercapitaA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
+            if (PIBpercapitaA04 > PIBpercapitaA03) {
+                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA04, PIBpercapitaA03);
+            } else if (PIBpercapitaA04 < PIBpercapitaA03) {
+                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA03, PIBpercapitaA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA04);
+            }
+        } else {
+            printf("Opção inválida\n");
+        break;
+        }
+    
+
+    case 7: // Super Poder
+        if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
+            if (SuperPoderA01 > SuperPoderA02) {
+                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA01, SuperPoderA02);
+            } else if (SuperPoderA01 < SuperPoderA02) {
+                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA02, SuperPoderA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
+            if (SuperPoderA01 > SuperPoderA03) {
+                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA01, SuperPoderA03);
+            } else if (SuperPoderA01 < SuperPoderA03) {
+                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA03, SuperPoderA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA01);
+            }
+        } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
+            if (SuperPoderA01 > SuperPoderA04) {
+                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA01, SuperPoderA04);
+            } else if (SuperPoderA01 < SuperPoderA04) {
+                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA04, SuperPoderA01);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA01);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
+            if (SuperPoderA02 > SuperPoderA01) {
+                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA02, SuperPoderA01);
+            } else if (SuperPoderA02 < SuperPoderA01) {
+                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA01, SuperPoderA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
+            if (SuperPoderA02 > SuperPoderA03) {
+                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA02, SuperPoderA03);
+            } else if (SuperPoderA02 < SuperPoderA03) {
+                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA03, SuperPoderA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA02);
+            }
+        } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
+            if (SuperPoderA02 > SuperPoderA04) {
+                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA02, SuperPoderA04);
+            } else if (SuperPoderA02 < SuperPoderA04) {
+                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA04, SuperPoderA02);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA02);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
+            if (SuperPoderA03 > SuperPoderA01) {
+                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA03, SuperPoderA01);
+            } else if (SuperPoderA03 < SuperPoderA01) {
+                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA01, SuperPoderA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
+            if (SuperPoderA03 > SuperPoderA02) {
+                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA03, SuperPoderA02);
+            } else if (SuperPoderA03 < SuperPoderA02) {
+                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA02, SuperPoderA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA03);
+            }
+        } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
+            if (SuperPoderA03 > SuperPoderA04) {
+                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA03, SuperPoderA04);
+            } else if (SuperPoderA03 < SuperPoderA04) {
+                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA04, SuperPoderA03);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA03);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
+            if (SuperPoderA04 > SuperPoderA01) {
+                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA04, SuperPoderA01);
+            } else if (SuperPoderA04 < SuperPoderA01) {
+                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA01, SuperPoderA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
+            if (SuperPoderA04 > SuperPoderA02) {
+                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA04, SuperPoderA02);
+            } else if (SuperPoderA04 < SuperPoderA02) {
+                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA02, SuperPoderA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA04);
+            }
+        } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
+            if (SuperPoderA04 > SuperPoderA03) {
+                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA04, SuperPoderA03);
+            } else if (SuperPoderA04 < SuperPoderA03) {
+                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA03, SuperPoderA04);
+            } else {
+                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA04);
+            }
+        } else {
+            printf("Opção inválida\n");
+        break;
+    }
+
+    default:
+        printf("Atributo inválido\n");
+        break;  }
+
+
+return 0;
+
+}
