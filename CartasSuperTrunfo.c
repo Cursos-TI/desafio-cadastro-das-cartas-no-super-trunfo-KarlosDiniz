@@ -1,22 +1,19 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
+// Tema 1 - Cadastro das Cartas     
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
+    // Exibição dos Dados das Cartas:'
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
 
     // INICIANDO O DESAFIO
     // Iniciando a codificação será impresso o Título: 
@@ -38,14 +35,14 @@ int main() {
 
     // Definindo variáveis separadas para cada atributo da cidade código A01:
 
-    char estadoA01[15], codigoA01[3], nomeA01[25];
+    char estadoA01, codigoA01[3], nomeA01[25];
     int populacaoA01, N_Pontos_TuristicosA01;
     float areaA01, PIBA01;
     
     // Solicitando ao usuário os dados das cartas Código A 
 
-   printf ("\nEntre com o nome do primeiro Estado, com Código A:\nNome Estado:\n");
-   scanf (" %s", &estadoA01);
+    printf ("\nEntre com o nome do primeiro Estado, com Código A:\nNome Estado:\n");
+    scanf (" %s", &estadoA01);
 
     // Solicita ao usuário os dados das cartas Código A01
 
@@ -155,7 +152,6 @@ int main() {
     float densidadepopA03 = populacaoA03 / areaA03;
     float PIBpercapitaA03 = PIBA03 / populacaoA03;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código A03
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade A03: %s", nomeA03);
@@ -216,7 +212,7 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderA04);
     printf ("...\n\n\n");
 
-   /* Deixando as linhas das demais cidades de B01 até o final (H4) comentadas para facilitar os testes com a inclusão de apenas 04 cidades
+    /* Deixando as linhas das demais cidades de B01 até o final (H4) comentadas para facilitar os testes com a inclusão de apenas 04 cidades
 
     // Definindo variáveis separadas para cada atributo da cidade código B01:
 
@@ -266,7 +262,7 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderB01);
     printf ("...\n\n\n");
 
-     // Definindo variáveis separadas para cada atributo da cidade código B02:
+    // Definindo variáveis separadas para cada atributo da cidade código B02:
 
     char estadoB02[20], codigoB02[3], nomeB02[25];
     int populacaoB02, N_Pontos_TuristicosB02;
@@ -554,7 +550,6 @@ int main() {
     float densidadepopC04 = populacaoC04 / areaC04;
     float PIBpercapitaC04 = PIBC04 / populacaoC04;
 
-
     // Imprimindo a confirmação dos dados incluídos pelo usuário das cartas Código C04
     
     printf ("\nVamos confirmar os dados:\nNome da Cidade C04: %s", nomeC04);
@@ -797,7 +792,7 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderE01);
     printf ("...\n\n\n");
 
-     // Definindo variáveis separadas para cada atributo da cidade código E02:
+    // Definindo variáveis separadas para cada atributo da cidade código E02:
 
     char estadoE02[20], codigoE02[3], nomeE02[25];
     int populacaoE02, N_Pontos_TuristicosE02;
@@ -974,7 +969,7 @@ int main() {
     printf ("\nSuper Poder da carta: %.2f", SuperPoderF01);
     printf ("...\n\n\n");
 
-     // Definindo variáveis separadas para cada atributo da cidade código F02:
+    // Definindo variáveis separadas para cada atributo da cidade código F02:
 
     char estadoF02[20], codigoF02[3], nomeF02[25];
     int populacaoF02, N_Pontos_TuristicosF02;
@@ -1460,19 +1455,19 @@ int main() {
     //Finalizando o trecho marcado como comentário desde cidade B01
     */
 
-   /* Comparação das cartas
-      A parte da comparação acontecerá da seguinte maneira:
-      O sistema permitirá ao usuário comparar duas cartas, exibindo todas as propriedades de cada uma.
-      O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades selecionadas.
-      A propriedade de densidade populacional será considerada vencedora quando tiver o menor valor, enquanto as outras propriedades vencerão quando tiverem o maior valor.
-      Cada carta terá um super poder que é a soma de todas as propriedades (população, área, PIB, PIB per capta e densidade populacional invertida para comparação e número de pontos turísticos).
-      A saída da comparação será 1 ou 0, caso a relação seja verdadeira ou falsa. Se o resultado da comparação for 1, a carta 1 ganhou; se o resultado for 0, a carta 2 ganhou.
-      O sistema deve imprimir o resultado das comparações para cada propriedade.
-   */
+    /* Comparação das cartas
+    A parte da comparação acontecerá da seguinte maneira:
+    O sistema permitirá ao usuário comparar duas cartas, exibindo todas as propriedades de cada uma.
+    O sistema utilizará operadores relacionais para determinar a carta vencedora com base nas propriedades selecionadas.
+    A propriedade de densidade populacional será considerada vencedora quando tiver o menor valor, enquanto as outras propriedades vencerão quando tiverem o maior valor.
+    Cada carta terá um super poder que é a soma de todas as propriedades (população, área, PIB, PIB per capta e densidade populacional invertida para comparação e número de pontos turísticos).
+    A saída da comparação será 1 ou 0, caso a relação seja verdadeira ou falsa. Se o resultado da comparação for 1, a carta 1 ganhou; se o resultado for 0, a carta 2 ganhou.
+    O sistema deve imprimir o resultado das comparações para cada propriedade.
+    */
 
     // O primeiro usuário escolhe as suas cartas e será impressa a confirmação dos dados
 
-   printf("*** Vamos começar o Jogo***\n\n");
+    printf("*** Vamos começar o Jogo***\n\n");
     int cartaescolhida1, cartaescolhida2;
     printf("Escolha uma carta pelo código (disponíveis no momento apenas: A01, A02, A03 e A04):\n");
     printf("1. Carta Código A01\n");
@@ -1481,8 +1476,7 @@ int main() {
     printf("4. Carta Código A04\n");
     scanf("%d", &cartaescolhida1);
 
-    switch (cartaescolhida1)
-    {
+    switch (cartaescolhida1) {
     case 1:
         printf("\nA Carta escolhida foi da Cidade: %s\n", nomeA01);
         printf("População: %d\n", populacaoA01);
@@ -1653,10 +1647,10 @@ int main() {
                 printf("Empate! Ambas as cartas têm a mesma população de %d\n", populacaoA04);
             }
         } else {
-            printf("Opção inválida\n");           
-            break;}
+            printf("Opção inválida\n");
+        }         
+        break;
         
-
     case 2: // Área
         if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
             if (areaA01 > areaA02) {
@@ -1756,212 +1750,212 @@ int main() {
             }
         } else {
             printf("Opção inválida\n");
-            break; }
-        
+        }         
+        break;
 
     case 3: // P.I.B.
         if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
             if (PIBA01 > PIBA02) {
-                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA01, PIBA02);
+                printf("A carta A01 venceu com o P.I.B. de %d contra %d da carta A02\n", PIBA01, PIBA02);
             } else if (PIBA01 < PIBA02) {
-                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA02, PIBA01);
+                printf("A carta A02 venceu com o P.I.B. de %d contra %d da carta A01\n", PIBA02, PIBA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA01);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
             if (PIBA01 > PIBA03) {
-                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA01, PIBA03);
+                printf("A carta A01 venceu com o P.I.B. de %d contra %d da carta A03\n", PIBA01, PIBA03);
             } else if (PIBA01 < PIBA03) {
-                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA03, PIBA01);
+                printf("A carta A03 venceu com o P.I.B. de %d contra %d da carta A01\n", PIBA03, PIBA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA01);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
             if (PIBA01 > PIBA04) {
-                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA01, PIBA04);
+                printf("A carta A01 venceu com o P.I.B. de %d contra %d da carta A04\n", PIBA01, PIBA04);
             } else if (PIBA01 < PIBA04) {
-                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA04, PIBA01);
+                printf("A carta A04 venceu com o P.I.B. de %d contra %d da carta A01\n", PIBA04, PIBA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA01);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA01);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
             if (PIBA02 > PIBA01) {
-                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA02, PIBA01);
+                printf("A carta A02 venceu com o P.I.B. de %d contra %d da carta A01\n", PIBA02, PIBA01);
             } else if (PIBA02 < PIBA01) {
-                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA01, PIBA02);
+                printf("A carta A01 venceu com o P.I.B. de %d contra %d da carta A02\n", PIBA01, PIBA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA02);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
             if (PIBA02 > PIBA03) {
-                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA02, PIBA03);
+                printf("A carta A02 venceu com o P.I.B. de %d contra %d da carta A03\n", PIBA02, PIBA03);
             } else if (PIBA02 < PIBA03) {
-                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA03, PIBA02);
+                printf("A carta A03 venceu com o P.I.B. de %d contra %d da carta A02\n", PIBA03, PIBA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA02);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
             if (PIBA02 > PIBA04) {
-                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA02, PIBA04);
+                printf("A carta A02 venceu com o P.I.B. de %d contra %d da carta A04\n", PIBA02, PIBA04);
             } else if (PIBA02 < PIBA04) {
-                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA04, PIBA02);
+                printf("A carta A04 venceu com o P.I.B. de %d contra %d da carta A02\n", PIBA04, PIBA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA02);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA02);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
             if (PIBA03 > PIBA01) {
-                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA03, PIBA01);
+                printf("A carta A03 venceu com o P.I.B. de %d contra %d da carta A01\n", PIBA03, PIBA01);
             } else if (PIBA03 < PIBA01) {
-                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA01, PIBA03);
+                printf("A carta A01 venceu com o P.I.B. de %d contra %d da carta A03\n", PIBA01, PIBA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA03);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
             if (PIBA03 > PIBA02) {
-                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA03, PIBA02);
+                printf("A carta A03 venceu com o P.I.B. de %d contra %d da carta A02\n", PIBA03, PIBA02);
             } else if (PIBA03 < PIBA02) {
-                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA02, PIBA03);
+                printf("A carta A02 venceu com o P.I.B. de %d contra %d da carta A03\n", PIBA02, PIBA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA03);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
             if (PIBA03 > PIBA04) {
-                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA03, PIBA04);
+                printf("A carta A03 venceu com o P.I.B. de %d contra %d da carta A04\n", PIBA03, PIBA04);
             } else if (PIBA03 < PIBA04) {
-                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA04, PIBA03);
+                printf("A carta A04 venceu com o P.I.B. de %d contra %d da carta A03\n", PIBA04, PIBA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA03);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA03);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
             if (PIBA04 > PIBA01) {
-                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A01\n", PIBA04, PIBA01);
+                printf("A carta A04 venceu com o P.I.B. de %d contra %d da carta A01\n", PIBA04, PIBA01);
             } else if (PIBA04 < PIBA01) {
-                printf("A carta A01 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA01, PIBA04);
+                printf("A carta A01 venceu com o P.I.B. de %d contra %d da carta A04\n", PIBA01, PIBA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA04);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
             if (PIBA04 > PIBA02) {
-                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A02\n", PIBA04, PIBA02);
+                printf("A carta A04 venceu com o P.I.B. de %d contra %d da carta A02\n", PIBA04, PIBA02);
             } else if (PIBA04 < PIBA02) {
-                printf("A carta A02 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA02, PIBA04);
+                printf("A carta A02 venceu com o P.I.B. de %d contra %d da carta A04\n", PIBA02, PIBA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA04);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
             if (PIBA04 > PIBA03) {
-                printf("A carta A04 venceu com a P.I.B. de %d contra %d da carta A03\n", PIBA04, PIBA03);
+                printf("A carta A04 venceu com o P.I.B. de %d contra %d da carta A03\n", PIBA04, PIBA03);
             } else if (PIBA04 < PIBA03) {
-                printf("A carta A03 venceu com a P.I.B. de %d contra %d da carta A04\n", PIBA03, PIBA04);
+                printf("A carta A03 venceu com o P.I.B. de %d contra %d da carta A04\n", PIBA03, PIBA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma P.I.B. de %d\n", PIBA04);
+                printf("Empate! Ambas as cartas têm o mesmo P.I.B. de %d\n", PIBA04);
             }
         } else {
             printf("Opção inválida\n");
-            break;
-        }
+        }         
+        break;
 
     case 4: // Número de Pontos Turísticos
         if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
             if (N_Pontos_TuristicosA01 > N_Pontos_TuristicosA02) {
-                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA02);
+                printf("A carta A01 venceu com o Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA02);
             } else if (N_Pontos_TuristicosA01 < N_Pontos_TuristicosA02) {
-                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA01);
+                printf("A carta A02 venceu com o Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
             if (N_Pontos_TuristicosA01 > N_Pontos_TuristicosA03) {
-                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA03);
+                printf("A carta A01 venceu com o Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA03);
             } else if (N_Pontos_TuristicosA01 < N_Pontos_TuristicosA03) {
-                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA01);
+                printf("A carta A03 venceu com o Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
             if (N_Pontos_TuristicosA01 > N_Pontos_TuristicosA04) {
-                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA04);
+                printf("A carta A01 venceu com o Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA04);
             } else if (N_Pontos_TuristicosA01 < N_Pontos_TuristicosA04) {
-                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA01);
+                printf("A carta A04 venceu com o Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA01);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
             if (N_Pontos_TuristicosA02 > N_Pontos_TuristicosA01) {
-                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA01);
+                printf("A carta A02 venceu com o Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA01);
             } else if (N_Pontos_TuristicosA02 < N_Pontos_TuristicosA01) {
-                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA02);
+                printf("A carta A01 venceu com o Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
             if (N_Pontos_TuristicosA02 > N_Pontos_TuristicosA03) {
-                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA03);
+                printf("A carta A02 venceu com o Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA03);
             } else if (N_Pontos_TuristicosA02 < N_Pontos_TuristicosA03) {
-                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA02);
+                printf("A carta A03 venceu com o Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
             if (N_Pontos_TuristicosA02 > N_Pontos_TuristicosA04) {
-                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA04);
+                printf("A carta A02 venceu com o Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA04);
             } else if (N_Pontos_TuristicosA02 < N_Pontos_TuristicosA04) {
-                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA02);
+                printf("A carta A04 venceu com o Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA02);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
             if (N_Pontos_TuristicosA03 > N_Pontos_TuristicosA01) {
-                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA01);
+                printf("A carta A03 venceu com o Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA01);
             } else if (N_Pontos_TuristicosA03 < N_Pontos_TuristicosA01) {
-                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA03);
+                printf("A carta A01 venceu com o Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
             if (N_Pontos_TuristicosA03 > N_Pontos_TuristicosA02) {
-                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA02);
+                printf("A carta A03 venceu com o Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA02);
             } else if (N_Pontos_TuristicosA03 < N_Pontos_TuristicosA02) {
-                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA03);
+                printf("A carta A02 venceu com o Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
             if (N_Pontos_TuristicosA03 > N_Pontos_TuristicosA04) {
-                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA04);
+                printf("A carta A03 venceu com o Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA04);
             } else if (N_Pontos_TuristicosA03 < N_Pontos_TuristicosA04) {
-                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA03);
+                printf("A carta A04 venceu com o Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA03);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
             if (N_Pontos_TuristicosA04 > N_Pontos_TuristicosA01) {
-                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA01);
+                printf("A carta A04 venceu com o Número de Pontos Turísticos de %d contra %d da carta A01\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA01);
             } else if (N_Pontos_TuristicosA04 < N_Pontos_TuristicosA01) {
-                printf("A carta A01 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA04);
+                printf("A carta A01 venceu com o Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA01, N_Pontos_TuristicosA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
             if (N_Pontos_TuristicosA04 > N_Pontos_TuristicosA02) {
-                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA02);
+                printf("A carta A04 venceu com o Número de Pontos Turísticos de %d contra %d da carta A02\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA02);
             } else if (N_Pontos_TuristicosA04 < N_Pontos_TuristicosA02) {
-                printf("A carta A02 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA04);
+                printf("A carta A02 venceu com o Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA02, N_Pontos_TuristicosA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
             if (N_Pontos_TuristicosA04 > N_Pontos_TuristicosA03) {
-                printf("A carta A04 venceu com a Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA03);
+                printf("A carta A04 venceu com o Número de Pontos Turísticos de %d contra %d da carta A03\n", N_Pontos_TuristicosA04, N_Pontos_TuristicosA03);
             } else if (N_Pontos_TuristicosA04 < N_Pontos_TuristicosA03) {
-                printf("A carta A03 venceu com a Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA04);
+                printf("A carta A03 venceu com o Número de Pontos Turísticos de %d contra %d da carta A04\n", N_Pontos_TuristicosA03, N_Pontos_TuristicosA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
+                printf("Empate! Ambas as cartas têm o mesmo Número de Pontos Turísticos de %d\n", N_Pontos_TuristicosA04);
             }
         } else {
             printf("Opção inválida\n");
-            break;
-        }
+        }         
+        break;
 
     case 5: // Densidade Populacional
         if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
@@ -2062,219 +2056,216 @@ int main() {
             }
         } else {
             printf("Opção inválida\n");
+        }         
         break;
-        }
 
     case 6: // PIB Per Capita
         if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
             if (PIBpercapitaA01 > PIBpercapitaA02) {
-                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA01, PIBpercapitaA02);
+                printf("A carta A01 venceu com o PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA01, PIBpercapitaA02);
             } else if (PIBpercapitaA01 < PIBpercapitaA02) {
-                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA02, PIBpercapitaA01);
+                printf("A carta A02 venceu com o PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA02, PIBpercapitaA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA01);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
             if (PIBpercapitaA01 > PIBpercapitaA03) {
-                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA01, PIBpercapitaA03);
+                printf("A carta A01 venceu com o PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA01, PIBpercapitaA03);
             } else if (PIBpercapitaA01 < PIBpercapitaA03) {
-                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA03, PIBpercapitaA01);
+                printf("A carta A03 venceu com o PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA03, PIBpercapitaA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA01);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
             if (PIBpercapitaA01 > PIBpercapitaA04) {
-                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA01, PIBpercapitaA04);
+                printf("A carta A01 venceu com o PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA01, PIBpercapitaA04);
             } else if (PIBpercapitaA01 < PIBpercapitaA04) {
-                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA04, PIBpercapitaA01);
+                printf("A carta A04 venceu com o PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA04, PIBpercapitaA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA01);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA01);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
             if (PIBpercapitaA02 > PIBpercapitaA01) {
-                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA02, PIBpercapitaA01);
+                printf("A carta A02 venceu com o PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA02, PIBpercapitaA01);
             } else if (PIBpercapitaA02 < PIBpercapitaA01) {
-                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA01, PIBpercapitaA02);
+                printf("A carta A01 venceu com o PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA01, PIBpercapitaA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA02);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
             if (PIBpercapitaA02 > PIBpercapitaA03) {
-                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA02, PIBpercapitaA03);
+                printf("A carta A02 venceu com o PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA02, PIBpercapitaA03);
             } else if (PIBpercapitaA02 < PIBpercapitaA03) {
-                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA03, PIBpercapitaA02);
+                printf("A carta A03 venceu com o PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA03, PIBpercapitaA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA02);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
             if (PIBpercapitaA02 > PIBpercapitaA04) {
-                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA02, PIBpercapitaA04);
+                printf("A carta A02 venceu com o PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA02, PIBpercapitaA04);
             } else if (PIBpercapitaA02 < PIBpercapitaA04) {
-                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA04, PIBpercapitaA02);
+                printf("A carta A04 venceu com o PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA04, PIBpercapitaA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA02);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA02);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
             if (PIBpercapitaA03 > PIBpercapitaA01) {
-                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA03, PIBpercapitaA01);
+                printf("A carta A03 venceu com o PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA03, PIBpercapitaA01);
             } else if (PIBpercapitaA03 < PIBpercapitaA01) {
-                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA01, PIBpercapitaA03);
+                printf("A carta A01 venceu com o PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA01, PIBpercapitaA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA03);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
             if (PIBpercapitaA03 > PIBpercapitaA02) {
-                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA03, PIBpercapitaA02);
+                printf("A carta A03 venceu com o PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA03, PIBpercapitaA02);
             } else if (PIBpercapitaA03 < PIBpercapitaA02) {
-                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA02, PIBpercapitaA03);
+                printf("A carta A02 venceu com o PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA02, PIBpercapitaA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA03);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
             if (PIBpercapitaA03 > PIBpercapitaA04) {
-                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA03, PIBpercapitaA04);
+                printf("A carta A03 venceu com o PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA03, PIBpercapitaA04);
             } else if (PIBpercapitaA03 < PIBpercapitaA04) {
-                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA04, PIBpercapitaA03);
+                printf("A carta A04 venceu com o PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA04, PIBpercapitaA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA03);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA03);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
             if (PIBpercapitaA04 > PIBpercapitaA01) {
-                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA04, PIBpercapitaA01);
+                printf("A carta A04 venceu com o PIB Per Capita de %d contra %d da carta A01\n", PIBpercapitaA04, PIBpercapitaA01);
             } else if (PIBpercapitaA04 < PIBpercapitaA01) {
-                printf("A carta A01 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA01, PIBpercapitaA04);
+                printf("A carta A01 venceu com o PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA01, PIBpercapitaA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA04);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
             if (PIBpercapitaA04 > PIBpercapitaA02) {
-                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA04, PIBpercapitaA02);
+                printf("A carta A04 venceu com o PIB Per Capita de %d contra %d da carta A02\n", PIBpercapitaA04, PIBpercapitaA02);
             } else if (PIBpercapitaA04 < PIBpercapitaA02) {
-                printf("A carta A02 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA02, PIBpercapitaA04);
+                printf("A carta A02 venceu com o PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA02, PIBpercapitaA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA04);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
             if (PIBpercapitaA04 > PIBpercapitaA03) {
-                printf("A carta A04 venceu com a PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA04, PIBpercapitaA03);
+                printf("A carta A04 venceu com o PIB Per Capita de %d contra %d da carta A03\n", PIBpercapitaA04, PIBpercapitaA03);
             } else if (PIBpercapitaA04 < PIBpercapitaA03) {
-                printf("A carta A03 venceu com a PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA03, PIBpercapitaA04);
+                printf("A carta A03 venceu com o PIB Per Capita de %d contra %d da carta A04\n", PIBpercapitaA03, PIBpercapitaA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma PIB Per Capita de %d\n", PIBpercapitaA04);
+                printf("Empate! Ambas as cartas têm o mesmo PIB Per Capita de %d\n", PIBpercapitaA04);
             }
         } else {
             printf("Opção inválida\n");
+        }         
         break;
-        }
-    
 
     case 7: // Super Poder
         if (cartaescolhida1 == 1 && cartaescolhida2 == 2) {
             if (SuperPoderA01 > SuperPoderA02) {
-                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA01, SuperPoderA02);
+                printf("A carta A01 venceu com o Super Poder de %d contra %d da carta A02\n", SuperPoderA01, SuperPoderA02);
             } else if (SuperPoderA01 < SuperPoderA02) {
-                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA02, SuperPoderA01);
+                printf("A carta A02 venceu com o Super Poder de %d contra %d da carta A01\n", SuperPoderA02, SuperPoderA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA01);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 3) {
             if (SuperPoderA01 > SuperPoderA03) {
-                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA01, SuperPoderA03);
+                printf("A carta A01 venceu com o Super Poder de %d contra %d da carta A03\n", SuperPoderA01, SuperPoderA03);
             } else if (SuperPoderA01 < SuperPoderA03) {
-                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA03, SuperPoderA01);
+                printf("A carta A03 venceu com o Super Poder de %d contra %d da carta A01\n", SuperPoderA03, SuperPoderA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA01);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA01);
             }
         } else if (cartaescolhida1 == 1 && cartaescolhida2 == 4) {
             if (SuperPoderA01 > SuperPoderA04) {
-                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA01, SuperPoderA04);
+                printf("A carta A01 venceu com o Super Poder de %d contra %d da carta A04\n", SuperPoderA01, SuperPoderA04);
             } else if (SuperPoderA01 < SuperPoderA04) {
-                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA04, SuperPoderA01);
+                printf("A carta A04 venceu com o Super Poder de %d contra %d da carta A01\n", SuperPoderA04, SuperPoderA01);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA01);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA01);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 1) {
             if (SuperPoderA02 > SuperPoderA01) {
-                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA02, SuperPoderA01);
+                printf("A carta A02 venceu com o Super Poder de %d contra %d da carta A01\n", SuperPoderA02, SuperPoderA01);
             } else if (SuperPoderA02 < SuperPoderA01) {
-                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA01, SuperPoderA02);
+                printf("A carta A01 venceu com o Super Poder de %d contra %d da carta A02\n", SuperPoderA01, SuperPoderA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA02);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 3) {
             if (SuperPoderA02 > SuperPoderA03) {
-                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA02, SuperPoderA03);
+                printf("A carta A02 venceu com o Super Poder de %d contra %d da carta A03\n", SuperPoderA02, SuperPoderA03);
             } else if (SuperPoderA02 < SuperPoderA03) {
-                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA03, SuperPoderA02);
+                printf("A carta A03 venceu com o Super Poder de %d contra %d da carta A02\n", SuperPoderA03, SuperPoderA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA02);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA02);
             }
         } else if (cartaescolhida1 == 2 && cartaescolhida2 == 4) {
             if (SuperPoderA02 > SuperPoderA04) {
-                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA02, SuperPoderA04);
+                printf("A carta A02 venceu com o Super Poder de %d contra %d da carta A04\n", SuperPoderA02, SuperPoderA04);
             } else if (SuperPoderA02 < SuperPoderA04) {
-                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA04, SuperPoderA02);
+                printf("A carta A04 venceu com o Super Poder de %d contra %d da carta A02\n", SuperPoderA04, SuperPoderA02);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA02);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA02);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 1) {
             if (SuperPoderA03 > SuperPoderA01) {
-                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA03, SuperPoderA01);
+                printf("A carta A03 venceu com o Super Poder de %d contra %d da carta A01\n", SuperPoderA03, SuperPoderA01);
             } else if (SuperPoderA03 < SuperPoderA01) {
-                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA01, SuperPoderA03);
+                printf("A carta A01 venceu com o Super Poder de %d contra %d da carta A03\n", SuperPoderA01, SuperPoderA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA03);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 2) {
             if (SuperPoderA03 > SuperPoderA02) {
-                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA03, SuperPoderA02);
+                printf("A carta A03 venceu com o Super Poder de %d contra %d da carta A02\n", SuperPoderA03, SuperPoderA02);
             } else if (SuperPoderA03 < SuperPoderA02) {
-                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA02, SuperPoderA03);
+                printf("A carta A02 venceu com o Super Poder de %d contra %d da carta A03\n", SuperPoderA02, SuperPoderA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA03);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA03);
             }
         } else if (cartaescolhida1 == 3 && cartaescolhida2 == 4) {
             if (SuperPoderA03 > SuperPoderA04) {
-                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA03, SuperPoderA04);
+                printf("A carta A03 venceu com o Super Poder de %d contra %d da carta A04\n", SuperPoderA03, SuperPoderA04);
             } else if (SuperPoderA03 < SuperPoderA04) {
-                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA04, SuperPoderA03);
+                printf("A carta A04 venceu com o Super Poder de %d contra %d da carta A03\n", SuperPoderA04, SuperPoderA03);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA03);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA03);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 1) {
             if (SuperPoderA04 > SuperPoderA01) {
-                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A01\n", SuperPoderA04, SuperPoderA01);
+                printf("A carta A04 venceu com o Super Poder de %d contra %d da carta A01\n", SuperPoderA04, SuperPoderA01);
             } else if (SuperPoderA04 < SuperPoderA01) {
-                printf("A carta A01 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA01, SuperPoderA04);
+                printf("A carta A01 venceu com o Super Poder de %d contra %d da carta A04\n", SuperPoderA01, SuperPoderA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA04);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 2) {
             if (SuperPoderA04 > SuperPoderA02) {
-                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A02\n", SuperPoderA04, SuperPoderA02);
+                printf("A carta A04 venceu com o Super Poder de %d contra %d da carta A02\n", SuperPoderA04, SuperPoderA02);
             } else if (SuperPoderA04 < SuperPoderA02) {
-                printf("A carta A02 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA02, SuperPoderA04);
+                printf("A carta A02 venceu com o Super Poder de %d contra %d da carta A04\n", SuperPoderA02, SuperPoderA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA04);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA04);
             }
         } else if (cartaescolhida1 == 4 && cartaescolhida2 == 3) {
             if (SuperPoderA04 > SuperPoderA03) {
-                printf("A carta A04 venceu com a Super Poder de %d contra %d da carta A03\n", SuperPoderA04, SuperPoderA03);
+                printf("A carta A04 venceu com o Super Poder de %d contra %d da carta A03\n", SuperPoderA04, SuperPoderA03);
             } else if (SuperPoderA04 < SuperPoderA03) {
-                printf("A carta A03 venceu com a Super Poder de %d contra %d da carta A04\n", SuperPoderA03, SuperPoderA04);
+                printf("A carta A03 venceu com o Super Poder de %d contra %d da carta A04\n", SuperPoderA03, SuperPoderA04);
             } else {
-                printf("Empate! Ambas as cartas têm a mesma Super Poder de %d\n", SuperPoderA04);
+                printf("Empate! Ambas as cartas têm o mesmo Super Poder de %d\n", SuperPoderA04);
             }
         } else {
             printf("Opção inválida\n");
+        }         
         break;
-    }
 
     default:
         printf("Atributo inválido\n");
-        break;  }
-
-
+        break; 
+    }
 return 0;
-
 }
